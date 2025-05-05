@@ -178,4 +178,85 @@ main footer h3 {
   font-size: 1.1rem;
   font-weight: 400;
   color: rgb(87, 198, 87);
+}
+
+@media (max-width: 768px) {
+  main .inputData {
+    width: 90%;
+  }
+  main .contentBox {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  main .contentBox .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  main .contentBox .name {
+    font-size: 1.3rem;
+  }
+  main .contentBox .username {
+    font-size: 0.95rem;
+  }
+  main .contentBox .bio {
+    font-size: 0.9rem;
+  }
+  main .contentBox .info {
+    font-size: 0.85rem;
+  }
+  main .contentBox .stats {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  main .contentBox .stats div {
+    width: 100%;
+    margin: 0;
+  }
+  main .contentBox .githubLink {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  main .inputData {
+    height: 2.5rem;
+  }
+  main .inputData input {
+    font-size: 0.9rem;
+    padding: 0 3rem 0 1rem;
+  }
+  main .inputData .searchBtn {
+    height: 1.8rem;
+    font-size: 0.85rem;
+    padding: 0 0.8rem;
+  }
+  main .contentBox {
+    padding: 1.2rem;
+  }
+  main .contentBox .name {
+    font-size: 1.2rem;
+  }
+  main .contentBox .username {
+    font-size: 0.9rem;
+  }
+  main .contentBox .bio {
+    font-size: 0.85rem;
+  }
+  main .contentBox .info {
+    font-size: 0.8rem;
+  }
+  main .contentBox .stats div {
+    font-size: 0.8rem;
+  }
+  main .contentBox .stats div span {
+    font-size: 1rem;
+  }
+  main .contentBox .githubLink {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  main footer h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

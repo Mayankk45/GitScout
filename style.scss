@@ -197,5 +197,116 @@ main {
             color: rgb(87, 198, 87);
         }
     }
-  }
+}
+
+@media (max-width: 768px) {
+    main {
+        .inputData {
+            width: 90%;
+        }
+
+        .contentBox {
+            width: 90%;
+            padding: 1.5rem;
+
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .name {
+                font-size: 1.3rem;
+            }
+
+            .username {
+                font-size: 0.95rem;
+            }
+
+            .bio {
+                font-size: 0.9rem;
+            }
+
+            .info {
+                font-size: 0.85rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 0.6rem;
+
+                div {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+            .githubLink {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+  
+@media (max-width: 480px) {
+    main {
+        .inputData {
+            height: 2.5rem;
+
+            input {
+                font-size: 0.9rem;
+                padding: 0 3rem 0 1rem;
+            }
+
+            .searchBtn {
+                height: 1.8rem;
+                font-size: 0.85rem;
+                padding: 0 0.8rem;
+            }
+        }
+
+        .contentBox {
+            padding: 1.2rem;
+
+            .name {
+                font-size: 1.2rem;
+            }
+
+            .username {
+                font-size: 0.9rem;
+            }
+
+            .bio {
+                font-size: 0.85rem;
+            }
+
+            .info {
+                font-size: 0.8rem;
+            }
+
+            .stats {
+                div {
+                    font-size: 0.8rem;
+
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .githubLink {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+
+        footer {
+            h3 {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+  
   
