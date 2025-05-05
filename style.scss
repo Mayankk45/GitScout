@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(36, 36, 63), rgb(25, 25, 50));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    .inputData {
+      height: 2.7rem;
+      width: 30rem;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 2rem;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      margin-bottom: 1rem;
+  
+      &:hover {
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+      }
+  
+      input {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(91, 87, 141);
+        border: none;
+        border-radius: 2rem;
+        padding: 0 3.5rem 0 1.2rem;
+        color: white;
+        font-size: 1rem;
+        outline: none;
+        transition: background-color 0.3s ease;
+  
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+  
+      .searchBtn {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #6C63FF;
+        color: white;
+        border: none;
+        border-radius: 1.5rem;
+        height: 2rem;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: #574fd6;
+        }    
+      }
+    }
+
+    .emptyInputMsg{
+        display: none;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: rgb(183, 59, 59);
+    }
+
+    .contentBox {
+        background-color: #2c2e4a;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 350px;
+        color: white;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        .avatar {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 1rem;
+          border: 3px solid #6C63FF;
+          box-shadow: 0 0 10px rgba(108, 99, 255, 0.5);
+        }
+      
+        .name {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin: 0.5rem 0 0.2rem;
+        }
+      
+        .username {
+          color: #b0b0ff;
+          font-style: italic;
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      
+        .bio {
+          font-size: 0.95rem;
+          color: #ddddff;
+          margin-bottom: 1rem;
+          padding: 0 0.5rem;
+        }
+      
+        .info {
+          font-size: 0.9rem;
+          margin: 0.3rem 0;
+          color: #ccc;
+      
+          strong {
+            color: #ffffff;
+          }
+        }
+      
+        .stats {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: 1rem 0;
+      
+          div {
+            background: #3d3f68;
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.8rem;
+            flex: 1;
+            margin: 0 0.3rem;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease;
+      
+            &:hover {
+              background-color: #4c4e78;
+            }
+      
+            strong {
+              font-weight: 500;
+              color: #aaa;
+            }
+      
+            span {
+              font-size: 1.1rem;
+              font-weight: bold;
+              color: #fff;
+              margin-top: 0.3rem;
+            }
+          }
+        }
+      
+        .githubLink {
+          display: inline-block;
+          margin-top: 1rem;
+          padding: 0.6rem 1.2rem;
+          background-color: #6C63FF;
+          color: white;
+          text-decoration: none;
+          border-radius: 0.5rem;
+          font-size: 0.95rem;
+          font-weight: 500;
+          transition: background-color 0.3s ease;
+      
+          &:hover {
+            background-color: #574fd6;
+          }
+        }
+    }
+    
+    footer{
+        h3{
+            margin-top: .8rem;
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: rgb(87, 198, 87);
+        }
+    }
+  }
+  
